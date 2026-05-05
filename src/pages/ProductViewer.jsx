@@ -1,20 +1,13 @@
 import { useEffect, useState } from "react";
-import {
-  Link,
-  useParams,
-  useNavigate,
-  useSearchParams,
-} from "react-router-dom";
+import { Link, useParams, useNavigate, useSearchParams } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
 
 import { auth } from "../firebase";
 import { getFurnitureById } from "../services/furnitureService";
-import {
-  saveConfiguration,
-  checkSavedConfiguration,
-} from "../services/configService";
+import { saveConfiguration, checkSavedConfiguration } from "../services/configService";
 
 import FurnitureCanvas from "../components/scene/FurnitureCanvas";
+import backBtn from "../assets/back.png";
 import saveHeart from "../assets/saved.png";
 import notHeart from "../assets/notSaved.png";
 import stopSpin from "../assets/stopSpin.png";
@@ -83,7 +76,7 @@ export default function ProductViewer() {
       const alreadySaved = await checkSavedConfiguration(
         user.uid,
         product.id,
-        selectedColor
+        selectedColor,
       );
 
       setIsSaved(alreadySaved);
@@ -107,7 +100,7 @@ export default function ProductViewer() {
       const alreadySaved = await checkSavedConfiguration(
         user.uid,
         product.id,
-        selectedColor
+        selectedColor,
       );
 
       if (alreadySaved) {
@@ -153,7 +146,7 @@ export default function ProductViewer() {
           to="/products"
           className="inline-flex items-center justify-center w-12 h-12 relative -top-4"
         >
-          <img src="/src/assets/back.png" alt="Back" />
+          <img src={backBtn} alt="Back" />
         </Link>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">

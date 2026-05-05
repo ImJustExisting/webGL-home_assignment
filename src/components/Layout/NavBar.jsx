@@ -4,6 +4,10 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import { doc, getDoc } from "firebase/firestore";
 import { auth, db } from "../../firebase";
 
+import logo from "../../assets/WebGL.png";
+import searchIcon from "../../assets/search-icon.png";
+import pfp from "../../assets/pfp.png";
+
 export default function Navbar() {
   const [user, setUser] = useState(null);
   const [userRole, setUserRole] = useState(null);
@@ -45,7 +49,7 @@ export default function Navbar() {
     <header className="w-full h-28 bg-olive-400 flex items-center px-10 gap-12">
       {/* Logo */}
       <Link to="/" className="shrink-0">
-        <img src="/src/assets/WebGL.png" alt="Logo" />
+        <img src={logo} alt="Logo" />
       </Link>
 
       {/* Navigation links */}
@@ -107,7 +111,7 @@ export default function Navbar() {
             className="absolute right-3 top-1/2 -translate-y-1/2 text-neutral-600 hover:text-black"
           >
             <img
-              src="/src/assets/search-icon.png"
+              src={searchIcon}
               alt="Search"
               className="w-5 h-5"
             />
@@ -122,7 +126,7 @@ export default function Navbar() {
             className="rounded-full focus:outline-none focus:ring-2 focus:ring-taupe-500"
           >
             <img
-              src="/src/assets/pfp.png"
+              src={pfp}
               alt="Profile"
               className="w-16 h-16 rounded-full cursor-pointer"
             />
