@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ProductList from "../components/products/ProductList";
+import ProductList from "../components/Products/ProductList";
 import { listenToFurniture } from "../services/furnitureService";
 
 export default function Products() {

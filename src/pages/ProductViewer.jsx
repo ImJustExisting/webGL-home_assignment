@@ -6,7 +6,7 @@ import { auth } from "../firebase";
 import { getFurnitureById } from "../services/furnitureService";
 import { saveConfiguration, checkSavedConfiguration } from "../services/configService";
 
-import FurnitureCanvas from "../components/scene/FurnitureCanvas";
+import FurnitureCanvas from "../components/Scene/FurnitureCanvas";
 import backBtn from "../assets/back.png";
 import saveHeart from "../assets/saved.png";
 import notHeart from "../assets/notSaved.png";
