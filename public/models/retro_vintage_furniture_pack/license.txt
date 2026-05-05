@@ -1,0 +1,8 @@
+Model Information:
+* title:	Retro Vintage Furniture Pack
+* source:	https://sketchfab.com/3d-models/retro-vintage-furniture-pack-795125fb8aac413e90cead2f68aa46d4
+* author:	michałko (https://sketchfab.com/michal_dmoch)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
