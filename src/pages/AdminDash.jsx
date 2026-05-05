@@ -4,12 +4,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { doc, getDoc } from "firebase/firestore";
 
 import { auth, db } from "../firebase";
-import {
-  listenToFurniture,
-  addFurniture,
-  updateFurniture,
-  deleteFurniture,
-} from "../services/furnitureService";
+import { listenToFurniture, addFurniture, updateFurniture, deleteFurniture } from "../services/furnitureService";
 
 const emptyForm = {
   name: "",

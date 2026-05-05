@@ -3,10 +3,7 @@ import { Link } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
 
 import { auth } from "../firebase";
-import {
-  getUserSavedConfigurations,
-  deleteSavedConfiguration,
-} from "../services/configService";
+import { getUserSavedConfigurations, deleteSavedConfiguration } from "../services/configService";
 
 export default function SavedConfigs() {
   const [user, setUser] = useState(null);
